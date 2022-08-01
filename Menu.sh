@@ -1,8 +1,16 @@
 #!/usr/bin/env bash
-export "MOCHIHOME=$(pwd)/test.sh" # PLEASE RE EDIT THIS EVN PLEASE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-export "NAME=$(whoami)"
-export BOT="\"MochiBot\""
-export LOOPEND=""
+MOCHIHOME="$(pwd)/test.sh" # PLEASE RE EDIT THIS EVN PLEASE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+readonly MOCHIHOME
+
+NAME="$(whoami)"
+readonly NAME
+
+BOT="\"MochiBot\""
+readonly BOT
+
+LOOPEND=""
+
+chmod +x ./*
 clear
 printf "\nWelcome, %s\n" "$NAME!"
 printf "My name is %s\n" "$BOT"
@@ -52,19 +60,19 @@ if [[ $USERINPUT == "1" ]]; then
 
     if [[ $USERINPUT == "a" ]]; then
         # Redirect the user to the 1st Menu List Folder (Option A)
-        ./Menu-List/a-user.sh
+        ./Essentials/Menu-List/a-user.sh
 
     elif [[ $USERINPUT == "b" ]]; then
         # Redirect the user to the 1st Menu List Folder (Option B)
-        ./Menu-List/b-user.sh
+        ./Essentials/Menu-List/b-user.sh
         
     elif [[ $USERINPUT == "c" ]]; then
         # Redirect the user to the 1st Menu List Folder (Option C)
-        ./Menu-List/c-user.sh
+        ./Essentials/Menu-List/c-user.sh
 
     elif [[ $USERINPUT == "d" ]]; then
         # Redirect the user to the 1st Menu List Folder (Option D)
-        ./Menu-List/d-user.sh
+        ./Essentials/Menu-List/d-user.sh
 
     fi
 
@@ -77,7 +85,7 @@ elif [[ $USERINPUT == "2" ]]; then
 
     if [[ $USERINPUT == "a" ]]; then
         # Redirect the user to the 2nd Menu List Folder (Option A)
-        ./Menu-List/a-distro.sh
+        ./Essentials/Menu-List/a-distro.sh
     fi
 
 ############## Menu 3 #####################
@@ -92,19 +100,19 @@ elif [[ $USERINPUT == "3" ]]; then
 
     if [[ $USERINPUT == "a" ]]; then
         # Redirect the user to the 3rd Menu List Folder (Option A)
-        ./Menu-List/a-ssh.sh
+        ./Essentials/Menu-List/a-ssh.sh
 
     elif [[ $USERINPUT == "b" ]]; then
         # Redirect the user to the 3rd Menu List Folder (Option B)
-        ./Menu-List/b-ssh.sh
+        ./Essentials/Menu-List/b-ssh.sh
         
     elif [[ $USERINPUT == "c" ]]; then
         # Redirect the user to the 3rd Menu List Folder (Option C)
-        ./Menu-List/c-ssh.sh
+        ./Essentials/Menu-List/c-ssh.sh
 
     elif [[ $USERINPUT == "d" ]]; then
         # Redirect the user to the 3rd Menu List Folder (Option D)
-        ./Menu-List/d-ssh.sh
+        ./Essentials/Menu-List/d-ssh.sh
 
     fi
 
@@ -119,20 +127,15 @@ elif [[ $USERINPUT == "4" ]]; then
 
     if [[ $USERINPUT == "a" ]]; then
         # Redirect the user to the 4th Menu List Folder (Option A)
-        ./Menu-List/a-user.sh
+        ./Essentials/Menu-List/a-Custom.sh
 
     elif [[ $USERINPUT == "b" ]]; then
         # Redirect the user to the 4th Menu List Folder (Option B)
-        ./Menu-List/b-user.sh
+        ./Essentials/Menu-List/b-Custom.sh
         
     elif [[ $USERINPUT == "c" ]]; then
         # Redirect the user to the 4th Menu List Folder (Option C)
-        ./Menu-List/c-user.sh
-
-    elif [[ $USERINPUT == "d" ]]; then
-        # Redirect the user to the 4th Menu List Folder (Option D)
-        ./Menu-List/d-user.sh
-
+        ./Essentials/Menu-List/c-Custom.sh
     fi
 
 ############## Menu 5 #####################

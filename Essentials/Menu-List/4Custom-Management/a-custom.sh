@@ -9,6 +9,7 @@ sudo echo
 
 if [[ "$USERINPUT" != "n" ]]; then
     
+    sudo apt install awk -y; sudo apt install fc-cache -y; sudo apt install mkdir -y; sudo apt install unlink; sudo apt install unzip -y
     echo -e "Mochibot will need to install JetBrainsMono Font...
     This could take a while...\n"
     sleep 1
@@ -20,7 +21,8 @@ if [[ "$USERINPUT" != "n" ]]; then
     sleep 1
     curl -sS https://starship.rs/install.sh | sh
     sudo apt install starship
-    echo -e "eval \"$(starship init bash)\""
+    echo -e "eval \"$(starship init bash)\"" >> "$HOME"/.bashrc
+    cat ./Customs/starship.txt > "$HOME"/.config/starship.toml
     echo -e "$LINE\nMochibot has finished installing Mochi's Terminal Configs
     Please press ENTER to refresh your terminal.\n$LINE"
 else [[ "$USERINPUT" == "n" ]]
