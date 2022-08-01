@@ -99,8 +99,8 @@ elif [[ $USERINPUT == "3" ]]; then
     echo -e "You have selected: $three\n"
     sleep 1
     echo -e "SSH Management
-    - (a) Adds .ssh into:  $HOME 
-    - (b) Vim into: $HOME/.ssh
+    - (a) Adds .ssh directory into: $HOME 
+    - (b) Configure: $HOME/.ssh/config
     - (c) Configure sshd_config
     - (d) Restarts SSHD"
 
