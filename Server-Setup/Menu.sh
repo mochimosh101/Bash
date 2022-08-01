@@ -100,7 +100,7 @@ elif [[ $USERINPUT == "3" ]]; then
     sleep 1
     echo -e "SSH Management
     - (a) Adds .ssh directory into: $HOME 
-    - (b) Configure: $HOME/.ssh/config
+    - (b) Configure: $HOME/.ssh/config | Create $HOME/.ssh/config
     - (c) Configure sshd_config
     - (d) Restarts SSHD"
 
