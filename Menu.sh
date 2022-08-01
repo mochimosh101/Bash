@@ -57,7 +57,7 @@ if [[ $USERINPUT == "1" ]]; then
     - (a) Adds a new user (Optional Inputs: Add Home Dir | Add Shell | Add User Discription)
     - (b) Add to a new group (this could be for the sudo group)
     - (c) Add or Change Password for the user"
-
+    
     if [[ $USERINPUT == "a" ]]; then
         # Redirect the user to the 1st Menu List Folder (Option A)
         ./Essentials/Menu-List/a-user.sh
@@ -123,8 +123,9 @@ elif [[ $USERINPUT == "4" ]]; then
     echo -e "Custom Installation
     - (a) Install Mochi's Terminal Configs
     - (b) Install Mochi's Kitty Terminal Configs
-    - (c) Install Mochi's Starship Terminal Configs"
-
+    - (c) Install Mochi's Starship Terminal Configs\n"
+    sleep 1
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/Bash/main/Essentials/Menu-List/4Custom-Management/a-custom.sh)"
     if [[ $USERINPUT == "a" ]]; then
         # Redirect the user to the 4th Menu List Folder (Option A)
         ./Essentials/Menu-List/a-Custom.sh
