@@ -9,7 +9,7 @@ sudo echo
 
 if [[ "$USERINPUT" != "n" ]]; then
     
-    sudo apt install awk -y; sudo apt install fc-cache -y; sudo apt install mkdir -y; sudo apt install unlink; sudo apt install unzip -y
+    sudo apt install awk -y; sudo apt install fontconfig -y; sudo apt install unlink; sudo apt install unzip -y
     echo -e "Mochibot will need to install JetBrainsMono Font...
     This could take a while...\n"
     sleep 1
