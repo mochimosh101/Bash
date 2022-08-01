@@ -24,7 +24,8 @@ if [[ "$USERINPUT" != "n" ]]; then
 
     curl -sS https://starship.rs/install.sh | sh
     sudo apt install starship -y
-    echo -e "eval \"$(starship init bash)\"" >> "$HOME"/.bashrc
+
+    echo "eval \"\$(starship init bash)\"" >> "$HOME"/.bashrc
 
     wget -P "$HOME"/.config/ https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Customs/Starship/starship.toml
     
