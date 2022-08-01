@@ -73,25 +73,11 @@ elif [[ $USERINPUT == "2" ]]; then
     echo -e "You have selected: $two\n"
     sleep 1
     echo -e "Distro Update:
-    - (a) Update the full distro
-    - (b) Upgrade the distro"
+    - (a) Update the full distro"
 
     if [[ $USERINPUT == "a" ]]; then
         # Redirect the user to the 2nd Menu List Folder (Option A)
         ./Menu-List/a-distro.sh
-
-    elif [[ $USERINPUT == "b" ]]; then
-        # Redirect the user to the 2nd Menu List Folder (Option B)
-        ./Menu-List/b-distro.sh
-        
-    elif [[ $USERINPUT == "c" ]]; then
-        # Redirect the user to the 2nd Menu List Folder (Option C)
-        ./Menu-List/c-distro.sh
-
-    elif [[ $USERINPUT == "d" ]]; then
-        # Redirect the user to the 2nd Menu List Folder (Option D)
-        ./Menu-List/d-distro.sh
-
     fi
 
 ############## Menu 3 #####################
