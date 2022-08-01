@@ -112,7 +112,10 @@ elif [[ $USERINPUT == "3" ]]; then
 elif [[ $USERINPUT == "4" ]]; then
     echo -e "You have selected: $four\n"
     sleep 1
-    echo 
+    echo -e "Custom Installation
+    - (a) Install Mochi's Terminal Configs
+    - (b) Install Mochi's Kitty Terminal Configs
+    - (c) Install Mochi's Starship Terminal Configs"
 
     if [[ $USERINPUT == "a" ]]; then
         # Redirect the user to the 4th Menu List Folder (Option A)
@@ -137,21 +140,10 @@ elif [[ $USERINPUT == "5" ]]; then
     echo -e "You have selected: $five\n"
     sleep 1
     if [[ $USERINPUT == "a" ]]; then
-        # Redirect the user to the 5th Menu List Folder (Option A)
-        ./Menu-List/a-user.sh
-
-    elif [[ $USERINPUT == "b" ]]; then
-        # Redirect the user to the 5th Menu List Folder (Option B)
-        ./Menu-List/b-user.sh
-        
-    elif [[ $USERINPUT == "c" ]]; then
-        # Redirect the user to the 5th Menu List Folder (Option C)
-        ./Menu-List/c-user.sh
-
-    elif [[ $USERINPUT == "d" ]]; then
-        # Redirect the user to the 5th Menu List Folder (Option D)
-        ./Menu-List/d-user.sh
-
+        # Work In Progress
+        echo "Hope to see you again!"
+        sleep 2
+        exit 0
     fi
 
 ############## Error Message Exit 1########
