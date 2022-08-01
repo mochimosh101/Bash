@@ -9,7 +9,7 @@ sudo echo
 
 if [[ "$USERINPUT" != "n" ]]; then
     
-    sudo apt install awk -y; sudo apt install fontconfig -y; sudo apt install unlink; sudo apt install unzip -y
+    sudo apt install fontconfig -y; sudo apt install unlink; sudo apt install unzip -y
     echo -e "Mochibot will need to install JetBrainsMono Font...
     This could take a while...\n"
     sleep 2
@@ -23,7 +23,7 @@ if [[ "$USERINPUT" != "n" ]]; then
     sleep 1
 
     curl -sS https://starship.rs/install.sh | sh
-    sudo apt install starship
+    sudo apt install starship -y
     echo -e "eval \"$(starship init bash)\"" >> "$HOME"/.bashrc
 
     wget -P "$HOME"/.config/ https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Customs/Starship/starship.toml
