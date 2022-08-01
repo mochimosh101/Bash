@@ -9,7 +9,7 @@ readonly BOT
 #LOOPEND=""
 
 wget https://github.com/mochimosh101/Bash.git
-chmod +x ./*
+chmod +x ./Bash/*
 clear
 printf "\nWelcome, %s\n" "$NAME!"
 printf "My name is %s\n" "$BOT"
