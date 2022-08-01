@@ -9,7 +9,7 @@ printf "My name is %s\n" "$BOT"
 sleep 1
 printf "\nWould you like to save me as a shell command? [y/N]\n"
 read -r COMMAND
-while [[ $LOOPEND == true ]]; do
+until [[ $LOOPEND == true ]]; do
 
 if [[ "$COMMAND" == "y" ]]; then
     alias mochibot='$MOCHIHOME'
@@ -17,7 +17,7 @@ if [[ "$COMMAND" == "y" ]]; then
 else [[ "$COMMAND" != "y" ]];
     echo "You have selected something that I have not been program to do!"
     sleep 1
-    $LOOPEND -eq true
+    "$LOOPEND=true"
 fi
 
 done
