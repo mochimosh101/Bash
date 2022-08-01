@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-MOCHIHOME="$(pwd)/test.sh" # PLEASE RE EDIT THIS EVN PLEASE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-readonly MOCHIHOME
 
 NAME="$(whoami)"
 readonly NAME
@@ -8,28 +6,29 @@ readonly NAME
 BOT="\"MochiBot\""
 readonly BOT
 
-LOOPEND=""
+#LOOPEND=""
 
 chmod +x ./*
 clear
 printf "\nWelcome, %s\n" "$NAME!"
 printf "My name is %s\n" "$BOT"
 sleep 1
-printf "\nWould you like to save me as a shell command? [y/N]\n"
-read -r COMMAND
-until [[ $LOOPEND == true ]]; do
 
-if [[ "$COMMAND" == "y" ]]; then
-    alias mochibot='$MOCHIHOME'
-  
-else [[ "$COMMAND" != "y" ]];
-    echo "You have selected something that I have not been program to do!"
-    sleep 1
-    "$LOOPEND=true"
-fi
+######## Need To Redo This ########
+#printf "\nWould you like to save me as a shell command? [y/N]\n"
+#read -r COMMAND
+#until [[ $LOOPEND == true ]]; do
 
-done
-
+#if [[ "$COMMAND" == "y" ]]; then
+#    alias mochibot='$MOCHIHOME'
+#  
+#else [[ "$COMMAND" != "y" ]];
+#    echo "You have selected something that I have not been program to do!"
+#    sleep 1
+#    "$LOOPEND=true"
+#fi
+#
+#done
 
 printf "I will be helping you with your initial server set up!\n" 
 echo -e "What would you like to start with?"
