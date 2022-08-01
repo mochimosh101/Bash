@@ -8,6 +8,7 @@ readonly BOT
 
 #LOOPEND=""
 
+wget https://github.com/mochimosh101/Bash.git
 chmod +x ./*
 clear
 printf "\nWelcome, %s\n" "$NAME!"
