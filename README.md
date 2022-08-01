@@ -11,5 +11,5 @@ _On Linux_:
 Open a terminal and run the following:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/Bash/main/Menu.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Menu.sh)"
 ```
