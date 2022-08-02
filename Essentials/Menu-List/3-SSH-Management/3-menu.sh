@@ -11,13 +11,12 @@ export D="Restarts SSHD"
 clear
 printf "I will be helping you with SSH Management!\n" 
 echo -e "What would you like to start with?"
-echo -e "   ============================================================
-a. | Adds .ssh directory into: $HOME                          |
-b. | Configure: $HOME/.ssh/config | Create $HOME/.ssh/config  |
-c. | Configure sshd_config                                    |
-d. | Restarts SSHD                                            |
-x. | Exit Menu                                                |
-   ============================================================\n"
+echo -e "
+a. | Adds .ssh directory into: $HOME                          
+b. | Configure: $HOME/.ssh/config | Create $HOME/.ssh/config  
+c. | Configure sshd_config                                    
+d. | Restarts SSHD                                            
+x. | Exit Menu\n"
 read -r SELECTION
 
 
