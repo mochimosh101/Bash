@@ -93,8 +93,7 @@ elif [[ $USERINPUT == "4" ]]; then
     - (b) Install Mochi's Kitty Terminal Configs
     - (c) Install Mochi's Starship Terminal Configs\n"
     sleep 1
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/Bash/main/Essentials/Menu-List/4Custom-Management/a-custom.sh)"
-
+    
 ############## Menu 5 #####################
 elif [[ $USERINPUT == "5" ]]; then
     echo -e "You have selected: $five\n"
