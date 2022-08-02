@@ -19,9 +19,18 @@ sudo echo
 
 if [[ "$USERINPUT" != "n" ]]; then
 
-    echo -e "Mochibot will now be installing kitty packages\n
+    echo -e "\nMochibot will now be installing kitty packages\n
     This could take a while...\n"
-    sudo apt update; sudo apt upgrade -y; sudo apt install kitty -y
+    sudo apt update; sudo apt upgrade -y
+    curl -sS https://starship.rs/install.sh | sh
+    sudo apt install kitty -y
+    wget -P "$HOME"/.local/share/fonts/caskaydia/ https://github.com/mochimosh101/Prettier-Terminal/raw/main/My-Terminal/kitty/CascadiaCode-Fonts/Caskaydia-Cove-Nerd-Font-Complete-Mono-Windows-Compatible.ttf
+    sleep 1
+    wget -P "$HOME"/.local/share/fonts/caskaydia/ https://github.com/mochimosh101/Prettier-Terminal/raw/main/My-Terminal/kitty/CascadiaCode-Fonts/Caskaydia-Cove-Nerd-Font-Complete-Mono.ttf
+    sleep 1
+    wget -P "$HOME"/.local/share/fonts/caskaydia/ https://github.com/mochimosh101/Prettier-Terminal/raw/main/My-Terminal/kitty/CascadiaCode-Fonts/Caskaydia-Cove-Nerd-Font-Complete-Windows-Compatible.ttf
+    sleep 1
+    wget -P "$HOME"/.local/share/fonts/caskaydia/ https://github.com/mochimosh101/Prettier-Terminal/raw/main/My-Terminal/kitty/CascadiaCode-Fonts/Caskaydia-Cove-Nerd-Font-Complete.ttf
     sleep 1
     wget -P "$HOME"/.config/kitty/ https://raw.githubusercontent.com/mochimosh101/Prettier-Terminal/main/My-Terminal/kitty/kitty.conf
     echo -e "$LINE\nMochibot has finished installing Mochi's Kitty Terminal Configs
