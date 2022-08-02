@@ -97,10 +97,9 @@ elif [[ $USERINPUT == "5" ]]; then
     echo "Hope to see you again!"
     sleep 2
     exit 0
-    fi
 
 ############## Error Message Exit 1########
-elif [[ $USERINPUT -le "6" ]]; then
+else
 
     echo "EERRROOORRRRRRRR"
     sleep 1
