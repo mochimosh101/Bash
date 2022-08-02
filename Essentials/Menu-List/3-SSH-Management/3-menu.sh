@@ -39,16 +39,16 @@ elif [[ $SELECTION == "c" ]]; then
     sleep 1
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/3-SSH-Management/SSH-Essentials/c-ssh.sh)"
     
-elif [[ $SELECTION == "c" ]]; then
+elif [[ $SELECTION == "d" ]]; then
 
-    echo -e "\n$C\n"
+    echo -e "\n$D\n"
     sleep 1
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/3-SSH-Management/SSH-Essentials/d-ssh.sh)"
     
 
 elif [[ $SELECTION == "x" ]]; then
 
-    echo -e "\nExiting Custom Management Menu..."
+    echo -e "\nExiting SSH Management Menu..."
     sleep 1
     exit 0
 
