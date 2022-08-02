@@ -60,6 +60,7 @@ if [[ $USERINPUT == "1" ]]; then
     if [[ $USERINPUT == "a" ]]; then
         # Redirect the user to the 1st Menu List
         ./Essentials/Menu-List/a-user.sh
+    fi
 
 ############## Menu 2 #####################
 elif [[ $USERINPUT == "2" ]]; then
@@ -83,24 +84,6 @@ elif [[ $USERINPUT == "3" ]]; then
     - (c) Configure sshd_config
     - (d) Restarts SSHD"
 
-    if [[ $USERINPUT == "a" ]]; then
-        # Redirect the user to the 3rd Menu List Folder (Option A)
-        ./Essentials/Menu-List/a-ssh.sh
-
-    elif [[ $USERINPUT == "b" ]]; then
-        # Redirect the user to the 3rd Menu List Folder (Option B)
-        ./Essentials/Menu-List/b-ssh.sh
-        
-    elif [[ $USERINPUT == "c" ]]; then
-        # Redirect the user to the 3rd Menu List Folder (Option C)
-        ./Essentials/Menu-List/c-ssh.sh
-
-    elif [[ $USERINPUT == "d" ]]; then
-        # Redirect the user to the 3rd Menu List Folder (Option D)
-        ./Essentials/Menu-List/d-ssh.sh
-
-    fi
-
 ############## Menu 4 #####################
 elif [[ $USERINPUT == "4" ]]; then
     echo -e "You have selected: $four\n"
@@ -111,18 +94,6 @@ elif [[ $USERINPUT == "4" ]]; then
     - (c) Install Mochi's Starship Terminal Configs\n"
     sleep 1
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/Bash/main/Essentials/Menu-List/4Custom-Management/a-custom.sh)"
-    if [[ $USERINPUT == "a" ]]; then
-        # Redirect the user to the 4th Menu List Folder (Option A)
-        ./Essentials/Menu-List/a-Custom.sh
-
-    elif [[ $USERINPUT == "b" ]]; then
-        # Redirect the user to the 4th Menu List Folder (Option B)
-        ./Essentials/Menu-List/b-Custom.sh
-        
-    elif [[ $USERINPUT == "c" ]]; then
-        # Redirect the user to the 4th Menu List Folder (Option C)
-        ./Essentials/Menu-List/c-Custom.sh
-    fi
 
 ############## Menu 5 #####################
 elif [[ $USERINPUT == "5" ]]; then
