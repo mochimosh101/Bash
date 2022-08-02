@@ -24,13 +24,13 @@ if [[ "$USERINPUT" != "n" ]]; then
 
     curl -sS https://starship.rs/install.sh | sh
     sudo apt install starship -y
-
+    echo -e "\n# This is for Starship Config" >> "$HOME"/.bashrc
     echo "eval \"\$(starship init bash)\"" >> "$HOME"/.bashrc
 
     wget -P "$HOME"/.config/ https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Customs/Starship/starship.toml
     
     echo -e "$LINE\nMochibot has finished installing Mochi's Terminal Configs
-    Please press ENTER to refresh your terminal.\n$LINE"
+    Please press exit the session and return to refresh your terminal.\n$LINE"
 
 else [[ "$USERINPUT" == "n" ]]
     echo -e "\nYou have cancelled Mochi's Terminal Configs installation"
