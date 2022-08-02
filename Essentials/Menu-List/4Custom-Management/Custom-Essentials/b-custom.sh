@@ -24,6 +24,7 @@ if [[ "$USERINPUT" != "n" ]]; then
     sudo apt update; sudo apt upgrade -y
     curl -sS https://starship.rs/install.sh | sh
     sudo apt install kitty -y
+    
     wget -P "$HOME"/.local/share/fonts/caskaydia/ https://github.com/mochimosh101/Prettier-Terminal/raw/main/My-Terminal/kitty/CascadiaCode-Fonts/Caskaydia-Cove-Nerd-Font-Complete-Mono-Windows-Compatible.ttf
     sleep 1
     wget -P "$HOME"/.local/share/fonts/caskaydia/ https://github.com/mochimosh101/Prettier-Terminal/raw/main/My-Terminal/kitty/CascadiaCode-Fonts/Caskaydia-Cove-Nerd-Font-Complete-Mono.ttf
@@ -33,6 +34,7 @@ if [[ "$USERINPUT" != "n" ]]; then
     wget -P "$HOME"/.local/share/fonts/caskaydia/ https://github.com/mochimosh101/Prettier-Terminal/raw/main/My-Terminal/kitty/CascadiaCode-Fonts/Caskaydia-Cove-Nerd-Font-Complete.ttf
     sleep 1
     wget -P "$HOME"/.config/kitty/ https://raw.githubusercontent.com/mochimosh101/Prettier-Terminal/main/My-Terminal/kitty/kitty.conf
+    
     echo -e "$LINE\nMochibot has finished installing Mochi's Kitty Terminal Configs
     Please press exit the session and return to refresh your terminal.\n$LINE"
 
