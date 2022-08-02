@@ -26,7 +26,7 @@ elif [[ $SELECTION == "c" ]]; then
 
     echo -e "\n$C\n"
     sleep 1
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/a-custom.sh
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/c-custom.sh
 )"
     
 
