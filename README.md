@@ -2,7 +2,7 @@
 
 📝 Note: This is still working in progress since I just started learning programming and github platform.
 
-# **Installation**
+# **Usage**
 
 ### Manual installation
 

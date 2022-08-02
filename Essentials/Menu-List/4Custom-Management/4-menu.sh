@@ -4,6 +4,10 @@ export A="Install Mochi's Terminal Configs"
 export B="Install Mochi's Kitty Terminal Configs"
 export C="Install Mochi's Starship Terminal Configs"
 
+################
+################
+
+clear
 printf "I will be helping you with Custom Installation!\n" 
 echo -e "What would you like to start with?"
 echo -e "   ===============================================
@@ -21,6 +25,7 @@ if [[ $SELECTION == "a" ]]; then
 elif [[ $SELECTION == "b" ]]; then
 
     echo -e "\n$B\n"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/b-custom.sh)"
 
 elif [[ $SELECTION == "c" ]]; then
 
@@ -36,13 +41,13 @@ elif [[ $SELECTION == "x" ]]; then
     sleep 1
     exit 0
 
-else [[ $SELECTION != "a|b|c|x" ]]
+else
 
     echo "EERRROOORRRRRRRR"
     sleep 1
     echo -e "You have selected something that I have not been program to do!"
     sleep 1
-    echo -e "Plrease try again and select another option.."
+    echo -e "Plrease try again and select another option..."
     exit 1
 
 fi
