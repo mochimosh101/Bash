@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 export "LINE======================================================================================="
-echo "Would you like to restart SSHD? (Y/n)"
+echo "Would you like to restart SSHD? [Y/n]"
 read -r USERINPUT
 if [[ "$USERINPUT" != "n" ]]; then
-    echo "Are you sure you want to restart SSHD?(Y/n)"
+    echo "Are you sure you want to restart SSHD? [Y/n]"
     read -r CONTINUE
     if [[ "$CONTINUE" != "n" ]]; then
         echo "Restarting SSHD..."

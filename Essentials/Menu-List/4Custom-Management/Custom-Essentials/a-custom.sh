@@ -13,7 +13,7 @@ clear
 echo -e "$LINE1\nMochi's Terminal Config consists of both Starship and Kitty\n$LINE1\n"
 echo "Please note that this will only work with apt package manager"
 sleep 2
-echo -e "Would you like to install Mochi's Terminal Configs (Y/n)"
+echo -e "Would you like to install Mochi's Terminal Configs [Y/n]"
 echo -e "\n$LINE1\nNote: This may not work if you don't have a \nDISPLAY environment or Desktop View\n$LINE1\n"
 sleep 1
 read -r USERINPUT

@@ -12,7 +12,7 @@ readonly LINE1
 clear
 echo "Please note that this will only work with apt package manager"
 sleep 2
-echo "Would install Mochi's Starship Terminal Configs (Y/n)"
+echo "Would install Mochi's Starship Terminal Configs [Y/n]"
 read -r USERINPUT
 sudo echo
 

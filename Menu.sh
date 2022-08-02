@@ -29,15 +29,15 @@ sleep 1
 #
 #done
 
-printf "I will be helping you with your initial server set up!\n" 
-echo -e "What would you like to start with?"
+printf "I will be helping you with your initial server set up!" 
+echo -e "What would you like to start with?\n"
 echo -e "   =================================
 1. | User Management               |
 2. | Distro Management             |
 3. | SSH Management                |
 4. | Custom Management             |
 5. | Exit Menu                     |
-   ================================="
+   =================================\n"
 
 export one="User Management"
 export two="Distro Management"

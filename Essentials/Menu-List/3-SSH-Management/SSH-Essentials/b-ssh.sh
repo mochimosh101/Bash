@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
-echo "Would you like to use Nano(y) or Vim(n)?"
+
+echo "Would you like to use Nano(n) or Vim(v)?"
 read -r response
-if [[ $response = "y" ]]; then
+if [[ $response = "n" ]]; then
     nano "$HOME"/.ssh/config
 
-elif [[ $response = "n" ]]; then
+elif [[ $response = "v" ]]; then
     vim "$HOME"/.ssh/config
 
-else [[ $response != "y" ]] && [[ $response != "n" ]]
+else
+
    sleep 1
    echo -e "\nYou have selected something that I have not been program to do!"
       
-
 fi

@@ -12,7 +12,7 @@ readonly LINE1
 clear
 echo "Please note that this will only work with apt package manager"
 sleep 2
-echo -e "Would install Mochi's Kitty Terminal Configs (Y/n)"
+echo -e "Would install Mochi's Kitty Terminal Configs [Y/n]"
 echo -e "\n$LINE1\nNote: This will not work if you don't have a DISPLAY environment or Desktop View\n$LINE1\n"
 sleep 1
 read -r USERINPUT

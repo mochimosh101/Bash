@@ -4,7 +4,7 @@ if [[ $USERINPUT  == "1" ]]; then
     read -r custom_user
     echo -e "The User Name will be: $custom_user"
     sleep 1
-    echo -e "Would you like to add a discription to this user? (y\\\n)"
+    echo -e "Would you like to add a discription to this user? [Y/n]"
     read -r discription_answer
         if [[ $discription_answer == "y" ]]; then
             printf "What discription do you want to add to this user?"
