@@ -87,7 +87,6 @@ elif [[ $USERINPUT == "3" ]]; then
 ############## Menu 4 #####################
 elif [[ $USERINPUT == "4" ]]; then
     echo -e "You have selected: $four\n"
-    sleep 1
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/4-menu.sh)"
 
 ############## Menu 5 #####################
