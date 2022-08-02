@@ -25,14 +25,13 @@ if [[ $SELECTION == "a" ]]; then
 elif [[ $SELECTION == "b" ]]; then
 
     echo -e "\n$B\n"
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/b-custom.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/b-custom.sh)"
 
 elif [[ $SELECTION == "c" ]]; then
 
     echo -e "\n$C\n"
     sleep 1
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/c-custom.sh
-)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/c-custom.sh)"
     
 
 elif [[ $SELECTION == "x" ]]; then
