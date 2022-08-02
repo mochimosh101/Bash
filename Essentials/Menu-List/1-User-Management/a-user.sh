@@ -1,15 +1,24 @@
 #!/usr/bin/env bash
-if [[ $USERINPUT  == "1" ]]; then
-    printf "Please Enter A User Name\n"
+export "LINE==========================================================="
+echo "Note: This will add a /bin/bash shell to the user."
+echo "Would you like to start making the new user? (Y/n)"
+read -r USERINPUT
+
+if [[ $USERINPUT  != "n" ]]; then
+    printf "Please enter the username:\n"
     read -r custom_user
-    echo -e "The User Name will be: $custom_user"
-    sleep 1
-    echo -e "Would you like to add a discription to this user? (y\\\n)"
+
+    echo -e "\n$LINE\nThe User Name will be: $custom_user\n$LINE\n"
+    
+    echo -e "Would you like to add a discription to this user? (Y/n)"
     read -r discription_answer
-        if [[ $discription_answer == "y" ]]; then
-            printf "What discription do you want to add to this user?"
+        if [[ $discription_answer != "n" ]]; then
+            echo "What discription do you want to add to this user?"
             read -r discription
-        else return
+        else [[ $discription_answer == "n" ]]
+            $discription -eq "" 
         fi
-    useradd -m -s /bin/bash -c "$discription" "$custom_user"
+    useradd -m -s /bin/bash -c "\"$discription\"" "$custom_user"
 fi
+
+echo "useradd -m -s /bin/bash -c $discription $custom_user"
