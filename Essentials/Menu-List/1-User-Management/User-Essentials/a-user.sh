@@ -67,4 +67,21 @@ fi
 
 sleep 1
 
-echo -e "Would you like to add $CUSTOM_USERNAME to a group? [y/N] "
+echo -e "\nWould you like to add $CUSTOM_USERNAME to a group? [Y/n]"
+read -r GROUP_ANSWER
+
+if [[ $GROUP_ANSWER != "n" ]]; then
+
+    echo -e "Which group would you like to add $CUSTOM_USERNAME to:"
+    read -r CUSTOM_GROUP
+
+    sudo usermod -aG "$CUSTOM_GROUP" "$CUSTOM_USERNAME"
+    sleep 1
+
+    echo -e "\n$LINE\nYou have successfully added $CUSTOM_USERNAME to $CUSTOM_GROUP.
+    Username: $CUSTOM_USERNAME
+    User shell: $SHELL
+    User discription: $USER_DISCRIPTION
+    User Group: $CUSTOM_GROUP\n$LINE\n"
+
+fi
