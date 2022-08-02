@@ -66,13 +66,8 @@ elif [[ $USERINPUT == "2" ]]; then
 
     echo -e "You have selected: $two\n"
     sleep 2
-    echo -e "Distro Update:
-    - (a) Update the full distro"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/2-Distro-Management/2-menu.sh)"
 
-    if [[ $USERINPUT == "a" ]]; then
-        # Redirect the user to the 2nd Menu List Folder (Option A)
-        ./Essentials/Menu-List/a-distro.sh
-    fi
 
 ############## Menu 3 #####################
 elif [[ $USERINPUT == "3" ]]; then
