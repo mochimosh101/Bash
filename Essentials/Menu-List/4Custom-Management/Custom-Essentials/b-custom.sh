@@ -21,7 +21,7 @@ if [[ "$USERINPUT" != "n" ]]; then
 
     echo -e "Mochibot will now be installing kitty packages\n
     This could take a while...\n"
-    sudo apt update && sudo apt upgrade -y; sudo apt install kitty -y
+    sudo apt update; sudo apt upgrade -y; sudo apt install kitty -y
     sleep 1
     wget -P "$HOME"/.config/kitty/ https://raw.githubusercontent.com/mochimosh101/Prettier-Terminal/main/My-Terminal/kitty/kitty.conf
     echo -e "$LINE\nMochibot has finished installing Mochi's Kitty Terminal Configs
