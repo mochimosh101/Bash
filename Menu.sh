@@ -63,8 +63,9 @@ if [[ $USERINPUT == "1" ]]; then
 
 ############## Menu 2 #####################
 elif [[ $USERINPUT == "2" ]]; then
+
     echo -e "You have selected: $two\n"
-    sleep 1
+    sleep 2
     echo -e "Distro Update:
     - (a) Update the full distro"
 
@@ -75,36 +76,37 @@ elif [[ $USERINPUT == "2" ]]; then
 
 ############## Menu 3 #####################
 elif [[ $USERINPUT == "3" ]]; then
+
     echo -e "You have selected: $three\n"
-    sleep 1
-    echo -e "SSH Management
-    - (a) Adds .ssh directory into: $HOME 
-    - (b) Configure: $HOME/.ssh/config | Create $HOME/.ssh/config
-    - (c) Configure sshd_config
-    - (d) Restarts SSHD"
+    sleep 2
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/3-SSH-Management/3-menu.sh)"
 
 ############## Menu 4 #####################
 elif [[ $USERINPUT == "4" ]]; then
+
     echo -e "You have selected: $four\n"
+    sleep 2
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/4-menu.sh)"
 
 ############## Menu 5 #####################
 elif [[ $USERINPUT == "5" ]]; then
+
     echo -e "You have selected: $five\n"
     sleep 1
-    if [[ $USERINPUT == "a" ]]; then
-        # Work In Progress
-        echo "Hope to see you again!"
-        sleep 2
-        exit 0
+    # Work In Progress
+    echo "Hope to see you again!"
+    sleep 2
+    exit 0
     fi
 
 ############## Error Message Exit 1########
 elif [[ $USERINPUT -le "6" ]]; then
+
     echo "EERRROOORRRRRRRR"
     sleep 1
     echo -e "You have selected something that I have not been program to do!"
     sleep 1
     echo -e "Plrease try again and select another option.."
     exit 1
+
 fi
