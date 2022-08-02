@@ -21,16 +21,19 @@ read -r SELECTION
 if [[ $SELECTION == "a" ]]; then
 
     echo -e "\n$A\n"
+    sleep 2
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/a-custom.sh)"
 
 elif [[ $SELECTION == "b" ]]; then
 
     echo -e "\n$B\n"
+    sleep 2
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/b-custom.sh)"
 
 elif [[ $SELECTION == "c" ]]; then
 
     echo -e "\n$C\n"
-    sleep 1
+    sleep 2
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/c-custom.sh)"
     
 
