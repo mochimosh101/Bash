@@ -58,22 +58,8 @@ if [[ $USERINPUT == "1" ]]; then
     - (c) Add or Change Password for the user"
     
     if [[ $USERINPUT == "a" ]]; then
-        # Redirect the user to the 1st Menu List Folder (Option A)
+        # Redirect the user to the 1st Menu List
         ./Essentials/Menu-List/a-user.sh
-
-    elif [[ $USERINPUT == "b" ]]; then
-        # Redirect the user to the 1st Menu List Folder (Option B)
-        ./Essentials/Menu-List/b-user.sh
-        
-    elif [[ $USERINPUT == "c" ]]; then
-        # Redirect the user to the 1st Menu List Folder (Option C)
-        ./Essentials/Menu-List/c-user.sh
-
-    elif [[ $USERINPUT == "d" ]]; then
-        # Redirect the user to the 1st Menu List Folder (Option D)
-        ./Essentials/Menu-List/d-user.sh
-
-    fi
 
 ############## Menu 2 #####################
 elif [[ $USERINPUT == "2" ]]; then
