@@ -13,3 +13,20 @@ a. | Update the full distro   |
 x. | Exit Menu                |
    ============================\n"
 read -r SELECTION
+
+if [[ $SELECTION == "a" ]]; then
+
+    echo -e "\n$A\n"
+    sleep 1
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/2-Distro-Management/Distro-Essentials/a-distro.sh)"
+
+else
+
+    echo "EERRROOORRRRRRRR"
+    sleep 1
+    echo -e "You have selected something that I have not been program to do!"
+    sleep 1
+    echo -e "Plrease try again and select another option..."
+    exit 1
+
+fi
