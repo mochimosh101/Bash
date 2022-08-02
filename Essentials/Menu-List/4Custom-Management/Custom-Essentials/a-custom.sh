@@ -55,7 +55,6 @@ if [[ $USERINPUT != "n" ]]; then
     sleep 1
 
     curl -sS https://starship.rs/install.sh | sh
-    sudo apt install starship -y
     echo -e "\n# This is for Starship Config" >> "$HOME"/.bashrc
     echo "eval \"\$(starship init bash)\"" >> "$HOME"/.bashrc
 
