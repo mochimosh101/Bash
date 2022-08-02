@@ -8,7 +8,7 @@ export C="Install Mochi's Starship Terminal Configs"
 ################
 
 clear
-printf "I will be helping you with Custom Installation!\n" 
+printf "I will be helping you with Custom Management!\n" 
 echo -e "What would you like to start with?"
 echo -e "   ===============================================
 a. | Install Mochi's Terminal Configs            |
