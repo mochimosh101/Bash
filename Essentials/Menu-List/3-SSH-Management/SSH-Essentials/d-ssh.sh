@@ -24,3 +24,16 @@ else [[ "$USERINPUT" = "n" ]]
     sleep 2
     exit 0
 fi
+
+echo -e "\nWould you like to choose another option? [Y/n]: "
+read -r OPTION
+
+if [[ $OPTION != "n" ]]; then
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/3-SSH-Management/3-menu.sh)"
+
+else
+
+    exit 0
+
+fi
