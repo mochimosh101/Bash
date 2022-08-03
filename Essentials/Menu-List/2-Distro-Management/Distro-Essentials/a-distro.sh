@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 export "LINE===================================================="
+
+################
+################
+
+clear
 echo "Would you like to update and upgrade your Distro? [Y/n]"
 read -r confirmation
 sudo echo
