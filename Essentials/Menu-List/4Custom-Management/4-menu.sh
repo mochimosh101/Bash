@@ -44,6 +44,12 @@ elif [[ $SELECTION == "c" ]]; then
     sleep 1
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/c-custom.sh)"
     
+elif [[ $SELECTION == "d" ]]; then
+
+    echo -e "\n$C\n"
+    sleep 1
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/d-custom.sh)"
+
 elif [[ $SELECTION == "x" ]]; then
 
     echo -e "\nExiting Custom Management Menu..."
