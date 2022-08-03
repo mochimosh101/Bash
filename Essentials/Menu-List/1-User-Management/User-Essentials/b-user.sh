@@ -35,7 +35,7 @@ function user_list() {
 
 }
 
-# Choose user #
+# Chooses and check if user exist #
 echo -e "\nPlease choose a user: "
 read -r INPUT_USER
 
