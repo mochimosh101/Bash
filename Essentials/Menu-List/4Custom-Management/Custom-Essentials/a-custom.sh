@@ -26,7 +26,6 @@ if [[ $USERINPUT != "n" ]]; then
     This could take a while...\n"
 
     sudo apt update; sudo apt upgrade -y
-    curl -sS https://starship.rs/install.sh | sh
     sudo apt install kitty -y
     
     wget -P "$HOME"/.local/share/fonts/caskaydia/ https://github.com/mochimosh101/Prettier-Terminal/raw/main/My-Terminal/kitty/CascadiaCode-Fonts/Caskaydia-Cove-Nerd-Font-Complete-Mono-Windows-Compatible.ttf
