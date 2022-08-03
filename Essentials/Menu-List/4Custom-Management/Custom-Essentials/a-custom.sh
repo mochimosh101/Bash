@@ -48,7 +48,7 @@ if [[ $USERINPUT != "n" ]]; then
     sleep 2
 
     # JetbrainsMono Github Manual Installation
-    sudo apt install fontconfig -y; sudo apt install unzip -y; sudo apt install font-manager
+    sudo apt install fontconfig -y; sudo apt install unzip -y; sudo apt install font-manager -y
     sleep 1
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
     
