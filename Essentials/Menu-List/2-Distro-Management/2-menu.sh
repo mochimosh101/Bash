@@ -22,7 +22,7 @@ if [[ $SELECTION == "a" ]]; then
 
 else
 
-    echo "EERRROOORRRRRRRR"
+    echo "EERRROOORRRRRRRRR"
     sleep 1
     echo -e "You have selected something that I have not been program to do!"
     sleep 1
