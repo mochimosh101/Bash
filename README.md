@@ -1,7 +1,10 @@
 # MochiBot: Mochi's Little Assistant 
 
-📝 Note: This is still working in progress since I just started learning programming and github platform.
+📝 Note:
 
+- This is still working in progress since I just started learning programming and github platform.
+- This is aim for people like me who always make new servers and need to quickly get started and set it up.
+- Please message me if you want something to be added to this project, I will be more than happy to do it.
 # **Usage**
 
 ### Manual Usage
