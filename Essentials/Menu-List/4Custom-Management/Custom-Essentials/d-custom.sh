@@ -38,7 +38,8 @@ if [[ "$DOCKER" != "n" ]] && [[ $DOCKER_COMPOSE != "n" ]]; then
 
     echo -e "\n$LINE1\nMochibot has successfully installed Docker...\n$LINE1\n"
     sudo systemctl status docker
-    sleep 1
+    sudo mkdir /home/docker
+    echo -e "\n$LINE1\nMochibot placed docker directory at /home/docker\n$LINE1\n"
 
     # Installing Docker Compose #
     mkdir -p ~/.docker/cli-plugins/
