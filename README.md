@@ -4,7 +4,10 @@
 
 # **Usage**
 
-### Manual installation
+### Manual Usage
+
+📝 Note: I will soon make it where you can run MochiBot internally without
+needing to type the this whole command down below!
 
 _On Linux_: 
 
