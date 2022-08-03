@@ -44,8 +44,12 @@ if [[ $USERINPUT != "n" ]]; then
     #### Installation of Starship ####
     echo -e "Mochibot will need to install JetBrainsMono Font...
     This could take a while...\n"
+    
     sleep 2
+
     # JetbrainsMono Github Manual Installation
+    sudo apt install fontconfig -y; sudo apt install unzip -y
+    sleep 1
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
     
     echo -e "\n$LINE1\nMochibot has finished installing JetBrains\n$LINE1\n"
