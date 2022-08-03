@@ -3,7 +3,8 @@
 export A="Install Mochi's Terminal Configs"
 export B="Install Mochi's Kitty Terminal Configs"
 export C="Install Mochi's Starship Terminal Configs"
-export C="Install Docker and Docker Compose"
+export D="Install Docker and Docker Compose"
+export E="Install NPM and Portainer "
 
 ################
 ################
@@ -47,15 +48,15 @@ elif [[ $SELECTION == "c" ]]; then
     
 elif [[ $SELECTION == "d" ]]; then
 
-    echo -e "\n$C\n"
+    echo -e "\n$D\n"
     sleep 1
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/d-custom.sh)"
 
 elif [[ $SELECTION == "e" ]]; then
 
-    echo -e "\n$C\n"
+    echo -e "\n$E\n"
     sleep 1
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/d-custom.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/e-custom.sh)"
 
 elif [[ $SELECTION == "x" ]]; then
 
