@@ -17,12 +17,13 @@ read -r DOCKER_COMPOSE
 
 sudo echo
 
-if [[ "$DOCKER" != "n" ]]; then
+if [[ "$DOCKER" != "n" ]] && [[ $DOCKER_COMPOSE != "n" ]]; then
     
     sudo apt-get update; sudo apt-get upgrade -y
     
     echo -e "\n$LINE1\nMochibot will now install Docker...\n$LINE1\n"
     
+    # Install Docker #
     sudo apt-get remove docker docker-engine docker.io
     sleep 1
     sudo apt install lsb-release ca-certificates apt-transport-https software-properties-common -y
@@ -39,22 +40,60 @@ if [[ "$DOCKER" != "n" ]]; then
     sudo systemctl status docker
     sleep 1
 
-elif [[ $DOCKER_COMPOSE != "n" ]]; then
-
+    # Installing Docker Compose #
     mkdir -p ~/.docker/cli-plugins/
     sleep 1
     curl -SL https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
     sleep 1
     chmod +x ~/.docker/cli-plugins/docker-compose
+    sleep 1
+    sudo apt install docker-compose
 
     echo -e "\n$LINE1\nMochibot has successfully installed Docker Compose...\n$LINE1\n"
     sleep 1
     docker compose version
 
+elif [[ "$DOCKER" != "n" ]] && [[ $DOCKER_COMPOSE == "n" ]]; then
+    
+    sudo apt-get update; sudo apt-get upgrade -y
+    
+    echo -e "\n$LINE1\nMochibot will now install Docker...\n$LINE1\n"
+    
+    # Install Docker #
+    sudo apt-get remove docker docker-engine docker.io
+    sleep 1
+    sudo apt install lsb-release ca-certificates apt-transport-https software-properties-common -y
+    sleep 1
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+    sleep 1
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    sudo apt update
+    sleep 1
+    sudo apt install docker-ce -y
+    sleep 1
+
+    echo -e "\n$LINE1\nMochibot has successfully installed Docker...\n$LINE1\n"
+    sudo systemctl status docker
+    sleep 1
+
+elif [[ "$DOCKER" == "n" ]] && [[ $DOCKER_COMPOSE != "n" ]]; then
+
+    # Installing Docker Compose #
+    mkdir -p ~/.docker/cli-plugins/
+    sleep 1
+    curl -SL https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+    sleep 1
+    chmod +x ~/.docker/cli-plugins/docker-compose
+    sleep 1
+    sudo apt install docker-compose
+
+    echo -e "\n$LINE1\nMochibot has successfully installed Docker Compose...\n$LINE1\n"
+    sleep 1
+    docker compose version
 
 elif [[ "$DOCKER" == "n" ]] && [[ "$DOCKER_COMPOSE" == "n" ]]; then
     
-    echo -e "\nYou have cancelled Mochi's Starship Terminal Configs installation"
+    echo -e "\nYou have cancelled Docker and Docker-Compose installation"
     exit 0
 
 else
