@@ -22,19 +22,19 @@ if [[ $SELECTION == "a" ]]; then
 
     echo -e "\n$A\n"
     sleep 1
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/a-custom.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/1-User-Management/User-Essentials/a-user.sh)"
 
 elif [[ $SELECTION == "b" ]]; then
 
     echo -e "\n$B\n"
     sleep 1
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/b-custom.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/1-User-Management/User-Essentials/b-user.sh)"
 
 elif [[ $SELECTION == "c" ]]; then
 
     echo -e "\n$C\n"
     sleep 1
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/c-custom.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/1-User-Management/User-Essentials/c-user.sh)"
     
 
 elif [[ $SELECTION == "x" ]]; then

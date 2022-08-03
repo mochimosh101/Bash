@@ -51,10 +51,7 @@ read -r USERINPUT
 if [[ $USERINPUT == "1" ]]; then
     echo -e "You have selected: $one\n"
     sleep 1
-    echo -e "User Management:
-    - (a) Adds a new user (Optional Inputs: Add Home Dir | Add Shell | Add User Discription)
-    - (b) Add to a new group (this could be for the sudo group)
-    - (c) Add or Change Password for the user"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/1-User-Management/1-menu.sh)"
     
     if [[ $USERINPUT == "a" ]]; then
         # Redirect the user to the 1st Menu List
