@@ -3,6 +3,7 @@
 export A="Install Mochi's Terminal Configs"
 export B="Install Mochi's Kitty Terminal Configs"
 export C="Install Mochi's Starship Terminal Configs"
+export C="Install Docker and Docker Compose"
 
 ################
 ################
@@ -14,6 +15,7 @@ echo -e "   ===============================================
 a. | Install Mochi's Terminal Configs            |
 b. | Install Mochi's Kitty Terminal Configs      |
 c. | Install Mochi's Starship Terminal Configs   |
+d. | Install Docker and Docker Compose           |
 x. | Exit Menu                                   |
    ===============================================\n"
 read -r SELECTION
@@ -35,8 +37,13 @@ elif [[ $SELECTION == "c" ]]; then
     echo -e "\n$C\n"
     sleep 1
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/c-custom.sh)"
-    
 
+elif [[ $SELECTION == "c" ]]; then
+
+    echo -e "\n$C\n"
+    sleep 1
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/Custom-Essentials/c-custom.sh)"
+    
 elif [[ $SELECTION == "x" ]]; then
 
     echo -e "\nExiting Custom Management Menu..."

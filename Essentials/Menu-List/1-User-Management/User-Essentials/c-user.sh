@@ -29,6 +29,7 @@ function die() {
   exit 1
 }
 
+# Checks users input to users system users #
 function user_list() {
 
     gawk -F: '{ print $1 }' /etc/passwd | grep "$INPUT_USER"
