@@ -50,14 +50,14 @@ read -r USERINPUT
 ############## Menu 1 ##############
 if [[ $USERINPUT == "1" ]]; then
     echo -e "You have selected: $one\n"
-    sleep 1
+    
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/1-User-Management/1-menu.sh)"
     
 ############## Menu 2 #####################
 elif [[ $USERINPUT == "2" ]]; then
 
     echo -e "You have selected: $two\n"
-    sleep 1
+    
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/2-Distro-Management/2-menu.sh)"
 
 
@@ -65,14 +65,14 @@ elif [[ $USERINPUT == "2" ]]; then
 elif [[ $USERINPUT == "3" ]]; then
 
     echo -e "You have selected: $three\n"
-    sleep 1
+    
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/3-SSH-Management/3-menu.sh)"
 
 ############## Menu 4 #####################
 elif [[ $USERINPUT == "4" ]]; then
 
     echo -e "You have selected: $four\n"
-    sleep 1
+    
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Essentials/Menu-List/4Custom-Management/4-menu.sh)"
 
 ############## Menu 5 #####################
@@ -81,7 +81,7 @@ elif [[ $USERINPUT == "5" ]]; then
     echo -e "You have selected: $five\n"
     # Work In Progress
     echo "Hope to see you again!"
-    sleep 1
+    
     exit 0
 
 ############## Error Message Exit 1########
