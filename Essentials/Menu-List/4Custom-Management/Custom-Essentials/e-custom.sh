@@ -34,6 +34,8 @@ if [[ "$NPM" != "n" ]] && [[ $PORTAINER != "n" ]]; then
 
     rm -rf "$HOME"/temp
 
+    sudo docker network create proxy
+
     sudo docker-compose --project-directory /home/docker/nginxproxymanager/ up -d
     echo -e "$LINE1\nNginx Proxy Manager is up and running\n$LINE1\n"
     
