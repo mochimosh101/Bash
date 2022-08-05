@@ -37,7 +37,6 @@ if [[ "$DOCKER" != "n" ]] && [[ $DOCKER_COMPOSE != "n" ]]; then
     sleep 1
 
     echo -e "\n$LINE1\nMochibot has successfully installed Docker...\n$LINE1\n"
-    sudo systemctl status docker
     sudo mkdir /home/docker
     echo -e "\n$LINE1\nMochibot placed docker directory at /home/docker\n$LINE1\n"
 
@@ -48,7 +47,7 @@ if [[ "$DOCKER" != "n" ]] && [[ $DOCKER_COMPOSE != "n" ]]; then
     sleep 1
     chmod +x ~/.docker/cli-plugins/docker-compose
     sleep 1
-    sudo apt install docker-compose
+    sudo apt install docker-compose -y
 
     echo -e "\n$LINE1\nMochibot has successfully installed Docker Compose...\n$LINE1\n"
     sleep 1
