@@ -26,6 +26,9 @@ if [[ "$NPM" != "n" ]] && [[ $PORTAINER != "n" ]]; then
     # Portainer YML #
     wget -P "$HOME"/temp/portainer https://raw.githubusercontent.com/mochimosh101/Docker/main/portainer/docker-compose.yml
     
+    # Making a network called proxy #
+    sudo docker network create proxy
+
     #Nginx Proxy Manager #
     sudo mv "$HOME"/temp/nginxproxymanager/docker-compose.yml /home/docker/nginxproxymanager
     
