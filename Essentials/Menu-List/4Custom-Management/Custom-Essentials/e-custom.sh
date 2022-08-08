@@ -3,8 +3,8 @@
 export "LINE1=================================================="
 readonly LINE1
 
-################
-################
+#################
+#################
 
 clear
 echo "Please note that this will only work with apt package manager"
