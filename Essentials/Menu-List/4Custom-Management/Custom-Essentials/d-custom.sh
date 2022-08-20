@@ -20,6 +20,7 @@ sudo echo
 if [[ "$DOCKER" != "n" ]] && [[ $DOCKER_COMPOSE != "n" ]]; then
     
     sudo apt-get update; sudo apt-get upgrade -y
+    sudo apt install wget -y
     
     echo -e "\n$LINE1\nMochibot will now install Docker...\n$LINE1\n"
     
