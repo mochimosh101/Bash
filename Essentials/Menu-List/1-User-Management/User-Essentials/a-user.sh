@@ -36,7 +36,7 @@ while true; do
         read -r CHOICE
 
         # If the user chooses to skip, then exit the loop
-        if [[ "$CHOICE" == "d" ]]; then
+        if [[ "$CHOICE" != "d" ]]; then
             echo "Skipping..."
             done
         fi
