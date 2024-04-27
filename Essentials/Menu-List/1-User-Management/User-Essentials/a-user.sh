@@ -24,13 +24,31 @@ if [[ $CUSTOM_SHELL_ANSWER == "y" ]]; then
 
 fi
 
-# Create usernmae #
+# Create username #
 echo -e "Please enter the username:"
 read -r CUSTOM_USERNAME
 
+# Check if the username already exists
+if id "$CUSTOM_USERNAME" &>/dev/null; then
+    echo "Username already exists."
+    echo -e "Continue or different username? [C/d]"
+    read -r CHOICE
+
+    # If the user chooses to skip, then skip to the next if block
+    if [[ "$CHOICE" == "d" ]]; then
+        echo "Skipping..."
+    fi
+
+    # If the user chooses to continue or presses Enter, prompt for a new username
+    echo -e "Please enter a different username:"
+    read -r CUSTOM_USERNAME
+    
+fi
+
+# Proceed if the username is unique or if the user chooses to continue with a different username
 echo -e "\n$LINE\nThe User Name will be: $CUSTOM_USERNAME\n$LINE\n"
 
-# Add user discription #
+# Add user description #
 echo -e "Would you like to add a description to this user? [Y/n]"
 read -r DESCRIPTION_ANSWER
 
@@ -38,13 +56,8 @@ if [[ $DESCRIPTION_ANSWER != "n" ]]; then
     echo -e "\nDescription for user:"
     read -r USER_DESCRIPTION
     echo -e "\n$LINE\nThe Description will be: $USER_DESCRIPTION\n$LINE\n"
-
-elif [[ $DESCRIPTION_ANSWER == "n" ]]; then
-    if [[ -n "$USER_DESCRIPTION" ]]; then
-        echo "Description is not empty: $USER_DESCRIPTION"
-    else
-        echo "Description is empty."
-    fi
+else
+    echo "No description provided."
 fi
 
 sudo useradd -m -s "$SHELL" -c "\"$USER_DESCRIPTION\"" "$CUSTOM_USERNAME"
