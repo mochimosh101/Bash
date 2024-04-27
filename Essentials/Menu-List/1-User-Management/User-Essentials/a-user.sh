@@ -38,7 +38,7 @@ while true; do
         # If the user chooses to skip, then exit the loop
         if [[ "$CHOICE" != "d" ]]; then
             echo "Skipping..."
-            done
+            continue
         fi
     else
         # If the username doesn't exist, exit the loop
