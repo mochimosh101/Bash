@@ -31,27 +31,27 @@ read -r CUSTOM_USERNAME
 echo -e "\n$LINE\nThe User Name will be: $CUSTOM_USERNAME\n$LINE\n"
 
 # Add user discription #
-echo -e "Would you like to add a discription to this user? [Y/n]"
-read -r DISCRIPTION_ANSWER
+echo -e "Would you like to add a description to this user? [Y/n]"
+read -r DESCRIPTION_ANSWER
 
-if [[ $DISCRIPTION_ANSWER != "n" ]]; then
+if [[ $DESCRIPTION_ANSWER != "n" ]]; then
     echo -e "\nDescription for user:"
     read -r USER_DESCRIPTION
     echo -e "\n$LINE\nThe Description will be: $USER_DESCRIPTION\n$LINE\n"
 
-elif [[ $DISCRIPTION_ANSWER == "n" ]]; then
+elif [[ $DESCRIPTION_ANSWER == "n" ]]; then
     if [[ -z "$USER_DESCRIPTION" ]]; then
         echo "Description is empty."
     fi
 fi
 
-sudo useradd -m -s "$SHELL" -c "\"$USER_DISCRIPTION\"" "$CUSTOM_USERNAME"
+sudo useradd -m -s "$SHELL" -c "\"$USER_DESCRIPTION\"" "$CUSTOM_USERNAME"
 sleep 1
 
 echo -e "\n$LINE\nYou have successfully created a new user!
 Username: $CUSTOM_USERNAME
 User shell: $SHELL
-User discription: $USER_DISCRIPTION\n$LINE\n"
+User discription: $USER_DESCRIPTION\n$LINE\n"
 
 sleep 1
 
