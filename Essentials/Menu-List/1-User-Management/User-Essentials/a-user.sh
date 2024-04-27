@@ -115,10 +115,15 @@ if [[ $GROUP_ANSWER != "n" ]]; then
     sudo usermod -aG "$GROUP_ANSWER" "$CUSTOM_USERNAME"
     sleep 1
 
-fi
-
     echo -e "\n$LINE\nYou have successfully added $CUSTOM_USERNAME to $CUSTOM_GROUP.
     Username: $CUSTOM_USERNAME
+    User shell: $SHELL
+    User discription: $USER_DISCRIPTION
+    User Group: $CUSTOM_GROUP\n$LINE\n"
+
+elif [[ $GROUP_ANSWER == "n" ]];
+
+    echo -e "\nUsername: $CUSTOM_USERNAME
     User shell: $SHELL
     User discription: $USER_DISCRIPTION
     User Group: $CUSTOM_GROUP\n$LINE\n"
