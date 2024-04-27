@@ -40,7 +40,9 @@ if [[ $DESCRIPTION_ANSWER != "n" ]]; then
     echo -e "\n$LINE\nThe Description will be: $USER_DESCRIPTION\n$LINE\n"
 
 elif [[ $DESCRIPTION_ANSWER == "n" ]]; then
-    if [[ -z "$USER_DESCRIPTION" ]]; then
+    if [[ -n "$USER_DESCRIPTION" ]]; then
+        echo "Description is not empty: $USER_DESCRIPTION"
+    else
         echo "Description is empty."
     fi
 fi
