@@ -120,6 +120,8 @@ if [[ $GROUP_ANSWER != "n" ]]; then
     User shell: $SHELL
     User discription: $USER_DISCRIPTION
     User Group: $CUSTOM_GROUP\n$LINE\n"
+    sleep 1
+    exit 0
 
 elif [[ $GROUP_ANSWER == "n" ]]; then
 
@@ -127,6 +129,8 @@ elif [[ $GROUP_ANSWER == "n" ]]; then
     User shell: $SHELL
     User discription: $USER_DISCRIPTION
     User Group: $CUSTOM_GROUP\n$LINE\n"
+    sleep 1
+    exit 0
 
 else
 
