@@ -112,8 +112,10 @@ if [[ $GROUP_ANSWER != "n" ]]; then
     echo -e "\nGroup Descriptions:"
     show_group_descriptions
 
-    sudo usermod -aG "$CUSTOM_GROUP" "$CUSTOM_USERNAME"
+    sudo usermod -aG "$GROUP_ANSWER" "$CUSTOM_USERNAME"
     sleep 1
+
+fi
 
     echo -e "\n$LINE\nYou have successfully added $CUSTOM_USERNAME to $CUSTOM_GROUP.
     Username: $CUSTOM_USERNAME
