@@ -92,7 +92,8 @@ show_group_descriptions() {
 
     # Print group descriptions inside the box
     for description in "${DESCRIPTIONS[@]}"; do
-        echo "${VERTICAL_LINE} ${description} ${EMPTY_LINE:0:$((BOX_WIDTH - ${#description}))} ${VERTICAL_LINE}"
+        local EMPTY_SPACE=$((BOX_WIDTH - ${#description}))
+        printf "%s %s %-${EMPTY_SPACE}s %s\n" "${VERTICAL_LINE}" "${description}" "" "${VERTICAL_LINE}"
     done
 
     # Print the bottom border of the box
@@ -104,7 +105,7 @@ echo -e "\nWould you like to add $CUSTOM_USERNAME to a group? [Y/n]"
 read -r GROUP_ANSWER
 
 if [[ $GROUP_ANSWER != "n" ]]; then
-    echo -e "Which group would you like to add $CUSTOM_USERNAME to: [sudo:admin ]"
+    echo -e "Which group would you like to add $CUSTOM_USERNAME to:"
     read -r CUSTOM_GROUP
 
     # Display group descriptions in a box
