@@ -35,15 +35,15 @@ echo -e "Would you like to add a discription to this user? [Y/n]"
 read -r DISCRIPTION_ANSWER
 
 if [[ $DISCRIPTION_ANSWER != "n" ]]; then
-    echo -e "\nDiscription for user:"
-    read -r USER_DISCRIPTION
-    echo -e "\n$LINE\nThe Discription will be: $USER_DISCRIPTION\n$LINE\n"
+    echo -e "\nDescription for user:"
+    read -r USER_DESCRIPTION
+    echo -e "\n$LINE\nThe Description will be: $USER_DESCRIPTION\n$LINE\n"
 
 elif [[ $DISCRIPTION_ANSWER == "n" ]]; then
-    
-    $USER_DISCRIPTION -eq "" 
-
-fi  
+    if [[ -z "$USER_DESCRIPTION" ]]; then
+        echo "Description is empty."
+    fi
+fi
 
 sudo useradd -m -s "$SHELL" -c "\"$USER_DISCRIPTION\"" "$CUSTOM_USERNAME"
 sleep 1
