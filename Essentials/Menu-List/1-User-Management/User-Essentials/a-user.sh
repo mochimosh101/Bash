@@ -106,13 +106,13 @@ read -r GROUP_ANSWER
 
 if [[ $GROUP_ANSWER != "n" ]]; then
     echo -e "Which group would you like to add $CUSTOM_USERNAME to:"
-    read -r GROUP_ANSWER
+    read -r CUSTOM_GROUP
 
     # Display group descriptions in a box
     echo -e "\nGroup Descriptions:"
     show_group_descriptions
 
-    sudo usermod -aG "$GROUP_ANSWER" "$CUSTOM_USERNAME"
+    sudo usermod -aG "$CUSTOM_GROUP" "$CUSTOM_USERNAME"
     sleep 1
 
     echo -e "\n$LINE\nYou have successfully added $CUSTOM_USERNAME to $CUSTOM_GROUP.
@@ -121,7 +121,7 @@ if [[ $GROUP_ANSWER != "n" ]]; then
     User discription: $USER_DISCRIPTION
     User Group: $CUSTOM_GROUP\n$LINE\n"
 
-elif [[ $GROUP_ANSWER == "n" ]];
+elif [[ $GROUP_ANSWER == "n" ]]; then
 
     echo -e "\nUsername: $CUSTOM_USERNAME
     User shell: $SHELL
