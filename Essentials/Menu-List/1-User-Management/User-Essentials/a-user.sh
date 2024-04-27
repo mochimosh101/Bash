@@ -117,16 +117,18 @@ show_group_descriptions() {
 }
 
 # Add user to a group #
+# Display group descriptions in a box
+echo -e "\n$LINE"
+echo -e "\nGroup Descriptions:"
+show_group_descriptions
+echo -e "\n$LINE"
+echo -e "\n"
 echo -e "\nWould you like to add $CUSTOM_USERNAME to a group? [Y/n]"
 read -r GROUP_ANSWER
 
 if [[ $GROUP_ANSWER != "n" ]]; then
     echo -e "Which group would you like to add $CUSTOM_USERNAME to:"
     read -r CUSTOM_GROUP
-
-    # Display group descriptions in a box
-    echo -e "\nGroup Descriptions:"
-    show_group_descriptions
 
     sudo usermod -aG "$CUSTOM_GROUP" "$CUSTOM_USERNAME"
     sleep 1
