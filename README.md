@@ -17,5 +17,6 @@ _On Linux_:
 Open a terminal and run the following:
 
 ```bash
+apt-get install curl
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mochimosh101/MochiBot/main/Menu.sh)"
 ```
