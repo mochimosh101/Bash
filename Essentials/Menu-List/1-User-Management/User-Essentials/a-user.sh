@@ -104,9 +104,9 @@ show_group_descriptions() {
 echo -e "\nWould you like to add $CUSTOM_USERNAME to a group? [Y/n]"
 read -r GROUP_ANSWER
 
-if [[ $CUSTOM_USERNAME != "n" ]]; then
+if [[ $GROUP_ANSWER != "n" ]]; then
     echo -e "Which group would you like to add $CUSTOM_USERNAME to:"
-    read -r CUSTOM_GROUP
+    read -r GROUP_ANSWER
 
     # Display group descriptions in a box
     echo -e "\nGroup Descriptions:"
